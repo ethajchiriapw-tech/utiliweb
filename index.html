@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UtiliWeb: herramientas online gratuitas para calcular porcentajes, descuentos, IVA y convertir unidades fácilmente.">
+    <meta name="theme-color" content="#0b1020">
+    <title>UtiliWeb | Herramientas online gratuitas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="#" aria-label="Inicio de UtiliWeb">
+            <span class="logo-icon">U</span>
+            <span>Utili<span class="accent">Web</span></span>
+        </a>
+
+        <nav class="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#herramientas">Herramientas</a>
+            <a href="#nosotros">Acerca de</a>
+        </nav>
+
+        <a class="header-button" href="#herramientas">Explorar herramientas ↗</a>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <div class="eyebrow">
+                    <span class="status-dot"></span>
+                    PRODUCTIVIDAD SIMPLIFICADA
+                </div>
+
+                <h1>Todo lo que necesitas.<br>
+                    <span class="gradient-text">En un solo lugar.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Herramientas online gratuitas para calcular, convertir
+                    y resolver tareas cotidianas en segundos.
+                    Sin complicaciones.
+                </p>
+
+                <a href="#herramientas" class="primary-button">
+                    Explorar herramientas <span>→</span>
+                </a>
+
+                <div class="hero-stats">
+                    <div>
+                        <strong>100%</strong>
+                        <span>Gratis</span>
+                    </div>
+                    <div>
+                        <strong>Fácil</strong>
+                        <span>De utilizar</span>
+                    </div>
+                    <div>
+                        <strong>Rápido</strong>
+                        <span>Resultados al instante</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual" aria-hidden="true">
+                <div class="orb orb-one"></div>
+                <div class="orb orb-two"></div>
+
+                <div class="visual-card visual-card-main">
+                    <div class="visual-card-top">
+                        <span class="mini-icon">%</span>
+                        <span class="visual-label">CALCULADORA</span>
+                        <span class="live-dot"></span>
+                    </div>
+                    <div class="visual-number">25%</div>
+                    <div class="visual-subtitle">de 200 es igual a</div>
+                    <div class="visual-result">50.00</div>
+                    <div class="visual-progress">
+                        <span></span>
+                    </div>
+                    <div class="visual-footer">Resultado instantáneo</div>
+                </div>
+
+                <div class="floating-card floating-one">
+                    <span class="float-icon purple">↗</span>
+                    <div>
+                        <strong>Conversión</strong>
+                        <small>Simple y rápida</small>
+                    </div>
+                </div>
+
+                <div class="floating-card floating-two">
+                    <span class="float-icon green">✓</span>
+                    <div>
+                        <strong>100% gratuito</strong>
+                        <small>Sin registro</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tools-section" id="herramientas">
+            <div class="section-heading">
+                <div>
+                    <div class="eyebrow">TU CAJA DE HERRAMIENTAS</div>
+                    <h2>¿Qué necesitas <span class="accent">resolver?</span></h2>
+                    <p>Encuentra la herramienta adecuada y obtén tu resultado.</p>
+                </div>
+                <span class="tool-count" id="toolCount">5 herramientas</span>
+            </div>
+
+            <div class="search-box">
+                <span class="search-icon">⌕</span>
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Buscar calculadoras, conversiones..."
+                    aria-label="Buscar herramientas"
+                >
+                <span class="search-shortcut">Buscar</span>
+            </div>
+
+            <div class="category-row">
+                <button class="category active" data-category="todas">Todas</button>
+                <button class="category" data-category="calculadora">Calculadoras</button>
+                <button class="category" data-category="conversion">Conversiones</button>
+            </div>
+
+            <div class="tools-grid" id="toolsGrid">
+
+                <article class="tool-card" data-category="calculadora"
+                    data-search="porcentaje calcular porcentaje matematicas">
+                    <div class="tool-card-top">
+                        <span class="tool-icon icon-blue">%</span>
+                        <span class="free-label">GRATIS</span>
+                    </div>
+                    <h3>Calculadora de porcentajes</h3>
+                    <p>Calcula porcentajes de cualquier cantidad de forma rápida y sencilla.</p>
+                    <button class="tool-link" data-open="porcentaje">
+                        Abrir herramienta <span>→</span>
+                    </button>
+                </article>
+
+                <article class="tool-card" data-category="calculadora"
+                    data-search="descuento precio oferta ahorro rebaja">
+                    <div class="tool-card-top">
+                        <span class="tool-icon icon-purple">↘</span>
+                        <span class="free-label">GRATIS</span>
+                    </div>
+                    <h3>Calculadora de descuentos</h3>
+                    <p>Descubre cuánto ahorras y cuál es el precio final de una oferta.</p>
+                    <button class="tool-link" data-open="descuento">
+                        Abrir herramienta <span>→</span>
+                    </button>
+                </article>
+
+                <article class="tool-card" data-category="conversion"
+                    data-search="temperatura celsius fahrenheit grados centigrados">
+                    <div class="tool-card-top">
+                        <span class="tool-icon icon-orange">°C</span>
+                        <span class="free-label">GRATIS</span>
+                    </div>
+                    <h3>Conversor de temperatura</h3>
+                    <p>Convierte grados Celsius a Fahrenheit y Fahrenheit a Celsius.</p>
+                    <button class="tool-link" data-open="temperatura">
+                        Abrir herramienta <span>→</span>
+                    </button>
+                </article>
+
+                <article class="tool-card" data-category="conversion"
+                    data-search="kilometros millas distancia longitud convertir">
+                    <div class="tool-card-top">
+                        <span class="tool-icon icon-green">⇄</span>
+                        <span class="free-label">GRATIS</span>
+                    </div>
+                    <h3>Conversor de distancia</h3>
+                    <p>Convierte kilómetros a millas y millas a kilómetros.</p>
+                    <button class="tool-link" data-open="distancia">
+                        Abrir herramienta <span>→</span>
+                    </button>
+                </article>
+
+                <article class="tool-card" data-category="calculadora"
+                    data-search="iva impuestos ecuador precio subtotal total porcentaje">
+                    <div class="tool-card-top">
+                        <span class="tool-icon icon-yellow">$</span>
+                        <span class="free-label">GRATIS</span>
+                    </div>
+                    <h3>Calculadora de IVA</h3>
+                    <p>Calcula el impuesto y el precio total usando la tarifa que necesites.</p>
+                    <button class="tool-link" data-open="iva">
+                        Abrir herramienta <span>→</span>
+                    </button>
+                </article>
+
+                <div class="empty-state" id="emptyState" hidden>
+                    <span>⌕</span>
+                    <h3>No encontramos herramientas</h3>
+                    <p>Prueba con otra palabra o cambia la categoría.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="calculator-section" id="calculadora">
+            <div class="calculator-heading">
+                <div class="eyebrow">HERRAMIENTA INTERACTIVA</div>
+                <h2 id="calculatorTitle">Calculadora de porcentajes</h2>
+                <p id="calculatorDescription">
+                    Introduce los valores y obtén tu resultado al instante.
+                </p>
+            </div>
+
+            <div class="calculator-panel">
+                <div class="calculator-form" id="calculatorForm">
+                    <p class="form-placeholder">
+                        Selecciona una herramienta para comenzar.
+                    </p>
+                </div>
+
+                <div class="result-panel">
+                    <div class="result-label">TU RESULTADO</div>
+                    <div class="result-value" id="resultValue">—</div>
+                    <p id="resultDescription">El resultado aparecerá aquí.</p>
+                    <button class="copy-button" id="copyResult" disabled>
+                        Copiar resultado
+                    </button>
+                    <p class="copy-feedback" id="copyFeedback" aria-live="polite"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="nosotros">
+            <div class="about-icon">✦</div>
+            <div>
+                <div class="eyebrow">SOBRE UTILiWEB</div>
+                <h2>Menos complicaciones.<br><span class="accent">Más soluciones.</span></h2>
+                <p>
+                    UtiliWeb nace con una idea sencilla: ofrecer herramientas
+                    digitales prácticas, gratuitas y fáciles de utilizar.
+                    Seguimos trabajando para añadir nuevas funciones.
+                </p>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="eyebrow">PREGUNTAS FRECUENTES</div>
+            <h2>Lo que debes saber</h2>
+
+            <details>
+                <summary>¿Las herramientas son gratuitas?</summary>
+                <p>Sí. Las herramientas disponibles en esta versión se pueden utilizar sin pagar.</p>
+            </details>
+
+            <details>
+                <summary>¿Necesito crear una cuenta?</summary>
+                <p>No necesitas registrarte para utilizar las herramientas de esta versión.</p>
+            </details>
+
+            <details>
+                <summary>¿Mis cálculos se envían a un servidor?</summary>
+                <p>Los cálculos de esta versión se realizan directamente en tu navegador.</p>
+            </details>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a class="logo" href="#inicio">
+            <span class="logo-icon">U</span>
+            <span>Utili<span class="accent">Web</span></span>
+        </a>
+        <p>Herramientas útiles para todos.</p>
+        <span class="copyright">© <span id="year"></span> UtiliWeb</span>
+    </footer>
+</body>
+</html>
